@@ -1,0 +1,16 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "/^Start-Process powershell -ArgumentList '-NoExit','-Command','cd \"C:\\\\Projects\\\\chess-project\"; \\. \\.venv\\\\Scripts\\\\Activate\\.ps1; uvicorn server:app --reload --port 8000' ; Start-Process powershell -ArgumentList '-NoExit','-Command','cd \"C:\\\\Projects\\\\chess-project\\\\UI\\\\frontend\"; npm run dev'$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^c:/Projects/chess-project/\\.venv/Scripts/python\\.exe -m pip install chess$/": {
+            "approve": true,
+            "matchCommandLine": true
+        },
+        "/^c:/Projects/chess-project/\\.venv/Scripts/python\\.exe -m pip install --trusted-host pypi\\.org --trusted-host files\\.pythonhosted\\.org chess$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}
